@@ -1,0 +1,51 @@
+
+Database => data_buku_pengunjung
+         => tabel 
+         --> pengunjung
+         ---> id primary key                     x
+         ---> username string(20)->unique()      ✓
+         ---> name varchar(200)                  ✓
+         ---> email string(20)->username()       ✓
+         ---> phone                              ✓
+         ---> tanggal_kunjungan->timestamp()     x
+         ---> tujuan_kunjungan                   ✓
+         ---> catatan                            ✓
+         ---> created_at                         x
+         ---> update_at                          x
+
+                                                                
+kolom bertanda (x) tidak perlu di tampilkan kepada user (form) 
+kolom bertanda (✓) wajib di tampilkan kepada user (form)
+                                                                
+
+
+                                                                
+Login untuk melihat pengunjung lain
+
+#Register
+         --> users
+         ---> id_user primary->Str::random()     x
+         ---> username string(30)                ✓
+         ---> name string(30)                    ✓
+         ---> email string(30)                   ✓
+         ---> password hash::make()              ✓
+                                                                
+
+#Login 
+         ---> email                              ✓
+         ---> password                           ✓
+                                                                
+
+#Ketika user klik salah satu tamu
+
+                                              
+    nama lengkap      : jhon doe              
+    tanggal_kunjungan : 12 mei 2023           
+    tujuan_kunjungan  : refreshing            
+    catatan           : hari ini luar biasa   
+    
+<-- back to home
+                                                                
+
+                                                                
+                                                                

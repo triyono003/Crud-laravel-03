@@ -1,0 +1,12 @@
+   <div class="card-body">
+       <ul class="list-group mt-2">
+  <li class="list-group-item active" aria-current="true">all list users</li>
+@foreach($users as $index => $user)
+  <li class="list-group-item">
+    {{ $index+1 }}. 
+    <a href="/users/{{$user->username}}/profile">{{ $user->name }}</a>
+  </li>
+@endforeach
+</ul>
+  </div>
+     </div>

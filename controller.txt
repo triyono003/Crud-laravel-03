@@ -1,0 +1,30 @@
+
+Controllers => HomeController
+            -> '/index()'                      ✓
+               • input username                ✓
+               • input name                    ✓
+               • input email                   ✓
+               • input phone                   ✓
+               • input tanggal_kunjungan       x
+               • input tujuan_kunjungan        ✓
+               • input catatan                 ✓
+               • input created_at              x
+               • input update_at               x
+
+                                                          
+kolom bertanda (x) tidak perlu di tampilkan kepada user 
+kolom bertanda (✓) wajib di tampilkan kepada user
+                                                          
+
+            => ActionController
+            -> '/create()'
+            -> '/show()'
+            
+            => Models
+            -> User
+            -> USER
+                                                          
+
+            
+                                                          
+                                                           
